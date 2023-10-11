@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f1faee;
+  color: #1d3557;
+}
+
+.links a, .social-media a {
+  margin: 0 1rem;
+  color: #1d3557;
+  text-decoration: none;
+}
+
+.links a:hover, .social-media a:hover {
+  color: #e63946; /* Primary Red for hover effect */
+}

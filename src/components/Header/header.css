@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 2rem;
+  background-color: #f1faee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.nav a {
+  line-height: 1.5;
+  margin: 0 1rem;
+  color: #1d3557;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #e63946; /* Primary Red for hover effect */
+}
+
+.nav a.login-btn {
+  background-color: #e63946; /* Primary Red for the login button */
+  color: #f1faee;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav a.login-btn:hover {
+  background-color: #f4a261; /* Secondary Red for hover effect */
+}
