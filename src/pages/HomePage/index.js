@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
+import MarketingInfo from '../../components/MarketingInfo/MarketingInfo';
 import './Homepage.css';
 
 function HomePage() {
@@ -6,21 +8,19 @@ function HomePage() {
 
   return (
     <div className="home-page">
+      <Helmet>
+        <title>Your Website Name - Home</title>
+      </Helmet>
       <section className="hero">
         <h1>Welcome to [Your Website Name]</h1>
         <p>Subtitle or brief description here.</p>
         <button onClick={() => setShowMore(!showMore)}>Learn More</button>
-
-        {showMore && (
-          <div className="marketing-info">
-            <h3>Marketing Information</h3>
-            <p>Details about your product, service, or any other relevant information.</p>
-            {/* Add more marketing content as needed */}
-          </div>
-        )}
       </section>
-
-      {/* ... (rest of the sections) */}
+      {showMore && (
+        <div className="marketing-info fade-in">
+          <MarketingInfo />
+        </div>
+      )}
     </div>
   );
 }

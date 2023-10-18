@@ -1,0 +1,51 @@
+.marketing-info {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .marketing-info h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .feature {
+    width: 30%;
+  }
+  
+  .feature h4 {
+    font-weight: bold;
+  }
+  
+  .feature p {
+    margin-top: 1rem;
+  }
+  
+  .marketing-info a {
+    color: #1d3557;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .marketing-info a:hover {
+    color: #e63946;
+  }
+  .fade-in {
+    animation: fadeIn ease 1s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
